@@ -1,0 +1,32 @@
+elements = [23, 14, 56, 12, 19, 9, 15, 25, 31, 42, 43]
+i=0
+c_e=0
+c_o=0
+c=0
+s_e=0
+s_o=0
+s=0
+a_e=0
+a_o=0
+a=0
+while(i<len(elements)):
+    if(elements[i]%2==0):
+        c_e=c_e+1
+        s_e=s_e+elements[i]
+    else:
+        c_o=c_o+1
+        s_o=s_o+elements[i]
+    i=i+1
+c=c_e+c_o
+s=s_e+s_o
+a=s//c
+print(s_e)
+print(s_o)
+print(s)
+print(s_e//c_e)
+print(s_o//c_o)
+print(a)
+print(c_e)
+print(c_o)
+print(c)
+
